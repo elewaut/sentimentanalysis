@@ -19,7 +19,7 @@ def accept_cookie(driver):
 def get_driver(URL):
     options = webdriver.ChromeOptions()
     options.headless = False
-    DRIVER_PATH = r'C:\Users\belewaut\OneDrive - Business & Decision Benelux S.A\Documents\chromedriver\chromedriver.exe'
+    DRIVER_PATH = r'C:\Users\PATH\Documents\chromedriver\chromedriver.exe'
     driver = webdriver.Chrome(executable_path=DRIVER_PATH, options=options)
     driver.get(URL)
     if driver.find_element(By.XPATH,'.//div[contains(@class, "cookie-notification__header")]'):
